@@ -1,0 +1,59 @@
+site_name: Enterprise Offline RAG Documentation
+site_description: Documentation for the Enterprise Offline RAG System
+site_author: Enterprise RAG Team
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: getting-started/installation.md
+    - Configuration: getting-started/configuration.md
+    - Quick Start: getting-started/quick-start.md
+  - Architecture:
+    - Overview: architecture/overview.md
+    - Pipeline: architecture/pipeline.md
+    - Components: architecture/components.md
+  - API Reference:
+    - Endpoints: api/endpoints.md
+    - Python SDK: api/python-sdk.md
+  - Deployment:
+    - Docker: deployment/docker.md
+    - Production: deployment/production.md
+  - Evaluation:
+    - Metrics: evaluation/metrics.md
+    - Usage: evaluation/usage.md
+  - Contributing: contributing.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+
